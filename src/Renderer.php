@@ -150,4 +150,9 @@ final class Renderer
   {
     echo $this->render($view, $data);
   }
+
+  public function displayBlock(string $name): void
+  {
+    echo $this->renderBlock($name);
+  }
 }
